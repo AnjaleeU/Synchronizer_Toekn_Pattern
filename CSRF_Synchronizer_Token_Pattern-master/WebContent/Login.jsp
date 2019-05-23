@@ -5,19 +5,21 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Login Form</title>
 </head>
 <body>
 
-	<center><h2>Login page</h2>
-	<br/>
+	<div align="center"><h2>Login Form</h2>
+	<br>
 	<form method="post" action="LoginController">
-		<label>username : </label><input type="text" name="username" /> 
-		<label>password : </label><input type="password" name="password"/>
+		<label>Username : </label><input type="text" name="username" /> 
+		<label>Password : </label><input type="password" name="password"/>
 		<c:if test="${not empty sessionScope.invalidCredentials}">
-			<div id="message" style="color:red;">Incorrect username & password!</div>
+			<div id="message" style="color:red;">Incorrect !</div>
 		</c:if>
 		<input type="submit" value="Login">
-	</form></center>
+	</form>
+	</div>
+	
 </body>
 </html>
