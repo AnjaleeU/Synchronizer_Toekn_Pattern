@@ -1,1 +1,0 @@
-# Synchronizer_Toekn_Pattern
