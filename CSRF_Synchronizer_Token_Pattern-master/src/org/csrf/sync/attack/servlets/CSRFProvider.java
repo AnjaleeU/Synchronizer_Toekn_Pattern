@@ -13,13 +13,7 @@ import javax.servlet.http.HttpSession;
 
 import com.google.gson.Gson;
 
-/**
- * Web service entry point to generate a CSRF token. It will be based on the
- * current session ID
- * 
- * @author JNiroshan
- *
- */
+
 @WebServlet("/CSRFProvider")
 public class CSRFProvider extends HttpServlet
 {
